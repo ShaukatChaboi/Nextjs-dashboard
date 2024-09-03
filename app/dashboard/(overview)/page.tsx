@@ -9,11 +9,11 @@ import {
   RevenueChartSkeleton,
 } from '@/app/ui/skeletons';
 
-import {
-  fetchRevenue,
-  fetchLatestInvoices,
-  fetchCardData,
-} from '@/app/lib/data';
+// import {
+//   fetchRevenue,
+//   fetchLatestInvoices,
+//   fetchCardData,
+// } from '@/app/lib/data';
 import CardWrapper from '@/app/ui/dashboard/cards';
 export default async function Page() {
   // const revenue = await fetchRevenue();
