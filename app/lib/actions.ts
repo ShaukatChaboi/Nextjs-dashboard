@@ -41,7 +41,8 @@ export async function deleteInvoice(id: string) {
 const CreateInvoice = FormSchema.omit({ id: true, date: true });
 
 export async function createInvoice(prevState: State, formData: FormData) {
-  //safeParse() will return an object containing either a success or error field. This will help handle validation more gracefully without having put this logic inside the try/catch block.
+  //safeParse() will return an object containing either a success or error field.
+  //This will help handle validation more gracefully without having put this logic inside the try/catch block.
   const validatedFields = CreateInvoice.safeParse({
     customerId: formData.get('customerId'),
     amount: formData.get('amount'),
